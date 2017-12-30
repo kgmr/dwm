@@ -6,3 +6,4 @@ Personal dwm
 - sticky
 - maximize
 - fancybar
+- zoomswap
