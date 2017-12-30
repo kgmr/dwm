@@ -32,9 +32,6 @@ static const Rule rules[] = {
 	{ "MComix",   NULL,       NULL,       0,            1,           -1 },
 	{ "xpad",     NULL,       NULL,       0,            1,           -1 },
 	{ "gsimplecal", NULL,     NULL,       0,            1,           -1 },
-	{ "plank",     NULL,      NULL,       0,            1,           -1 },
-	{ "tilda",     NULL,      NULL,       0,            1,           -1 },
-	{ "tilda",     NULL,      NULL,       0,            1,           -1 },
 };
 
 /* layout(s) */
@@ -77,7 +74,7 @@ static Key keys[] = {
 	{ MODKEY,                       XK_h,      setmfact,       {.f = -0.05} },
 	{ MODKEY,                       XK_l,      setmfact,       {.f = +0.05} },
 	{ MODKEY,                       XK_i,      zoom,           {0} },
-	{ MODKEY,                       XK_m,      togglesticky,           {0} },
+	{ MODKEY,                       XK_m,      togglesticky,   {0} },
 	{ MODKEY,                       XK_Tab,    view,           {0} },
 	{ MODKEY|ShiftMask,             XK_c,      killclient,     {0} },
 	{ MODKEY,                       XK_a,      setlayout,      {.v = &layouts[0]} },
@@ -85,7 +82,7 @@ static Key keys[] = {
 	{ MODKEY,                       XK_d,      setlayout,      {.v = &layouts[2]} },
 	{ MODKEY,                       XK_space,  setlayout,      {0} },
 	{ MODKEY|ShiftMask,             XK_space,  togglefloating, {0} },
-    { MODKEY,           XK_f,      togglemaximize,      {0} },
+    { MODKEY,                       XK_f,      togglemaximize, {0} },
 	{ MODKEY,                       XK_0,      view,           {.ui = ~0 } },
 	{ MODKEY|ShiftMask,             XK_0,      tag,            {.ui = ~0 } },
 	{ MODKEY,                       XK_comma,  focusmon,       {.i = -1 } },
