@@ -7,3 +7,4 @@ Personal dwm
 - maximize
 - fancybar
 - zoomswap
+- attachaside
