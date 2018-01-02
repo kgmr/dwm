@@ -9,3 +9,4 @@ Personal dwm
 - fancybar
 - zoomswap
 - attachaside
+- stackmfact
