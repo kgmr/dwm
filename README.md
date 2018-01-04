@@ -11,3 +11,4 @@ Personal dwm
 - attachaside
 - stackmfact
 - noborder
+- uselessgaps
