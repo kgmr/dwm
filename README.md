@@ -10,3 +10,4 @@ Personal dwm
 - zoomswap
 - attachaside
 - stackmfact
+- noborder
