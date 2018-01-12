@@ -12,3 +12,4 @@ Personal dwm
 - stackmfact
 - noborder
 - uselessgaps
+- autostart
