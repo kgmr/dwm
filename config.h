@@ -2,10 +2,11 @@
 #include "zoomswap.c"
 /* See LICENSE file for copyright and license details. */
 /* appearance */
+/* applications can be autostarted from ~/.dwm/autostart.sh */
 static const unsigned int borderpx  = 1;        /* border pixel of windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const unsigned int minwsz    = 20;       /* Minimal heigt of a client for smfact */
-static const unsigned int gappx     = 0;       /* gaps */
+static const unsigned int gappx     = 4;       /* gaps */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const char *fonts[]          = {"Monaco:size=9", "Wuncon Siji" };
@@ -68,7 +69,7 @@ static const char *termcmd[]  = { "termite",  NULL };
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
-	{ MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
+	{ MODKEY,                       XK_x,      spawn,          {.v = dmenucmd } },
 	{ MODKEY,                       XK_Return, spawn,          {.v = termcmd } },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
