@@ -9,8 +9,8 @@ static const unsigned int minwsz    = 20;       /* Minimal heigt of a client for
 static const unsigned int gappx     = 4;       /* gaps */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-static const char *fonts[]          = {"Monaco:size=9", "Wuncon Siji" };
-static const char dmenufont[]       = "Monaco:size=9";
+static const char *fonts[]          = {"Tewi", "Wuncon Siji" };
+static const char dmenufont[]       = "Tewi";
 static const char col_gray1[]       = "#282828";
 static const char col_gray2[]       = "#444444";
 static const char col_gray3[]       = "#bbbbbb";
@@ -23,7 +23,7 @@ static const char *colors[][3]      = {
 };
 
 /* tagging */
-static const char *tags[] = { "一", "二", "三", "四", "五" };
+static const char *tags[] = { "1st", "2nd", "3rd", "4th", "5th" };
 
 static const Rule rules[] = {
 	/* xprop(1):

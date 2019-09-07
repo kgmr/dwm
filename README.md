@@ -13,3 +13,4 @@ Personal dwm
 - noborder
 - uselessgaps
 - autostart
+- focusonnetactive
