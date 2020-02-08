@@ -6,10 +6,10 @@
 static const unsigned int borderpx  = 1;        /* border pixel of windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const unsigned int minwsz    = 20;       /* Minimal heigt of a client for smfact */
-static const unsigned int gappx     = 0;       /* gaps */
+static const unsigned int gappx     = 5;       /* gaps */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-static const char *fonts[]          = {"Tewi", "Wuncon Siji" };
+static const char *fonts[]          = {"Monaco", "Siji" };
 static const char dmenufont[]       = "Tewi";
 static const char col_gray1[]       = "#282828";
 static const char col_gray2[]       = "#444444";
@@ -91,8 +91,8 @@ static Key keys[] = {
     { MODKEY,                       XK_f,      togglemaximize, {0} },
 	{ MODKEY,                       XK_0,      view,           {.ui = ~0 } },
 	{ MODKEY|ShiftMask,             XK_0,      tag,            {.ui = ~0 } },
-	{ MODKEY,                       XK_comma,  focusmon,       {.i = -1 } },
-	{ MODKEY,                       XK_period, focusmon,       {.i = +1 } },
+	{ MODKEY,                       XK_e,  focusmon,       {.i = -1 } },
+	{ MODKEY,                       XK_r,  focusmon,       {.i = +1 } },
 	{ MODKEY|ShiftMask,             XK_comma,  tagmon,         {.i = -1 } },
 	{ MODKEY|ShiftMask,             XK_period, tagmon,         {.i = +1 } },
     { MODKEY|ShiftMask,             XK_j,      pushdown,       {0} },
