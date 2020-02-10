@@ -9,8 +9,8 @@ static const unsigned int minwsz    = 20;       /* Minimal heigt of a client for
 static const unsigned int gappx     = 5;       /* gaps */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-static const char *fonts[]          = {"Dina", "Siji" };
-static const char dmenufont[]       = "Dina";
+static const char *fonts[]          = {"Gohufont", "Siji" };
+static const char dmenufont[]       = "Gohufont";
 static const char col_gray1[]       = "#282828";
 static const char col_gray2[]       = "#444444";
 static const char col_gray3[]       = "#bbbbbb";
@@ -93,8 +93,8 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_0,      tag,            {.ui = ~0 } },
 	{ MODKEY,                       XK_e,  focusmon,       {.i = -1 } },
 	{ MODKEY,                       XK_r,  focusmon,       {.i = +1 } },
-	{ MODKEY|ShiftMask,             XK_comma,  tagmon,         {.i = -1 } },
-	{ MODKEY|ShiftMask,             XK_period, tagmon,         {.i = +1 } },
+	{ MODKEY|ShiftMask,             XK_e,  tagmon,         {.i = -1 } },
+	{ MODKEY|ShiftMask,             XK_r,  tagmon,         {.i = +1 } },
     { MODKEY|ShiftMask,             XK_j,      pushdown,       {0} },
     { MODKEY|ShiftMask,             XK_k,      pushup,         {0} },
 	TAGKEYS(                        XK_1,                      0)
