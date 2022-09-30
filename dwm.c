@@ -1931,7 +1931,7 @@ tile(Monitor *m)
 	for (i = 0, my = ty = m->gappx, c = nexttiled(m->clients); c; c = nexttiled(c->next), i++)
 		if (i < m->nmaster) {
 			h = (m->wh - my) * (c->cfact / mfacts) - m->gappx;
-			resize(c, m->wx +m->gappx, m->wy + my, mw - (2*c->bw) - 2* m->gappx, h - (2*c->bw), 0);
+			resize(c, m->wx +m->gappx, m->wy + my, mw - (2*c->bw) - m->gappx, h - (2*c->bw), 0);
 			if (my + HEIGHT(c) < m->wh)
 				my += HEIGHT(c) + m->gappx;
      			mfacts -= c->cfact;
