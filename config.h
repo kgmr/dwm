@@ -11,7 +11,19 @@ static const int vertpad            = 10;       /* vertical padding of bar */
 static const int sidepad            = 10;       /* horizontal padding of bar */
 static const char *fonts[]          = {"Siji", "Siji" };
 static const char dmenufont[]       = "Siji";
-#import "/home/kgmr/.cache/wal/colors-wal-dwm.h"
+static char normfgcolor[] = "#424242";
+static char normbgcolor[] = "#ffffce";
+static char normbordercolor[] = "#ffffce";
+
+static char selfgcolor[] = "#ffffce";
+static char selbgcolor[] = "#424242";
+static char selbordercolor[] = "#424242";
+
+static char *colors[][3]      = {
+    /*               fg           bg         border                         */
+    [SchemeNorm] = { normfgcolor,     normbgcolor,   normbordercolor }, // unfocused wins
+    [SchemeSel]  = { selfgcolor,      selbgcolor,    selbordercolor },  // the focused win
+};
 /* tagging */
 static const char *tags[] = { "\ue010", "\ue011", "\ue012", "\ue013", "\ue014"};
 
